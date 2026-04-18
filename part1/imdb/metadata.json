@@ -1,0 +1,24 @@
+{
+  "num_classes": 2,
+  "class_names": [
+    "Negative",
+    "Positive"
+  ],
+  "train_size": 35020,
+  "val_size": 7480,
+  "test_size": 7500,
+  "class_distribution": {
+    "train": {
+      "1": 17510,
+      "0": 17510
+    },
+    "val": {
+      "1": 3740,
+      "0": 3740
+    },
+    "test": {
+      "0": 3750,
+      "1": 3750
+    }
+  }
+}
