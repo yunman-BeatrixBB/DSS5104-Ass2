@@ -1,0 +1,2 @@
+dataset,model_type,C,max_features,ngram_range,val_accuracy,val_macro_f1,train_time
+imdb,lr,0.1,10000,"(1, 1)",0.8731283422459893,0.8730329758287555,5.658415079116821
