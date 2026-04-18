@@ -1,0 +1,37 @@
+DSS5104 Text Classification — Dataset Statistics Report
+
+[Datasets]
+AG News: 4-class topic classification (World / Sports / Business / Sci-Tech). Pre-split train/test from Kaggle. Text = title + description.
+IMDB: 2-class sentiment analysis (Negative / Positive). 50K reviews from Kaggle. Stratified 90/10 train/test split (seed=42). HTML tags removed.
+
+[Class Distribution]
+Both datasets are perfectly balanced — no class imbalance issue. Accuracy and macro-F1 are expected to be consistent.
+dataset,split,class_id,class_name,count,percentage
+AG News,Train,0,World,30000,25.0
+AG News,Train,1,Sports,30000,25.0
+AG News,Train,2,Business,30000,25.0
+AG News,Train,3,Sci/Tech,30000,25.0
+AG News,Test,0,World,1900,25.0
+AG News,Test,1,Sports,1900,25.0
+AG News,Test,2,Business,1900,25.0
+AG News,Test,3,Sci/Tech,1900,25.0
+IMDB,Train,0,Negative,22500,50.0
+IMDB,Train,1,Positive,22500,50.0
+IMDB,Test,0,Negative,2500,50.0
+IMDB,Test,1,Positive,2500,50.0
+
+[Text Length Statistics (word count)]
+AG News texts are very short (mean ~38 words). No sample exceeds 256 words. Transformer 512-token limit has zero impact. TF-IDF and n-gram features can capture topic-distinctive vocabulary effectively.
+IMDB reviews are much longer (mean ~229 words) with high variance (std ~170). About 7.2% of reviews exceed 512 words and will be truncated by BERT. Sentiment analysis requires understanding context and word order — advantages for Transformer and BiLSTM over bag-of-words.
+dataset,split,n_samples,mean,median,std,min,95th_pct,max,gt_128,gt_128_pct,gt_256,gt_256_pct,gt_512,gt_512_pct
+AG News,Train,120000,37.8,37.0,10.1,4,53.0,177,38,0.03,0,0.0,0,0.0
+AG News,Test,7600,37.7,37.0,10.1,11,52.0,137,2,0.03,0,0.0,0,0.0
+AG News,Overall,127600,37.8,37.0,10.1,4,53.0,177,40,0.03,0,0.0,0,0.0
+IMDB,Train,45000,228.8,171.0,169.4,4,585.0,2459,32692,72.65,12677,28.17,3240,7.2
+IMDB,Test,5000,229.3,174.0,171.3,6,577.0,1808,3662,73.24,1408,28.16,358,7.16
+IMDB,Overall,50000,228.9,171.0,169.6,4,585.0,2459,36354,72.71,14085,28.17,3598,7.2
+
+[Implications for Model Selection]
+AG News: Short texts with clear topic keywords favor classical methods (TF-IDF + LR/SVM). Transformer pre-training may offer limited advantage.
+IMDB: Long texts requiring contextual understanding favor Transformers. ~7% truncation at 512 tokens is a minor concern but worth noting in the report.
+Data Efficiency: AG News — TF-IDF likely competitive even at low fractions. IMDB — Transformer pre-trained knowledge may shine at 1-10% data.

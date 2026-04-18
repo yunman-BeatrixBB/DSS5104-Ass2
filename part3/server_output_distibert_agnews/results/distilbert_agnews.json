@@ -1,0 +1,1145 @@
+{
+  "model": "distilbert-base-uncased",
+  "dataset": "agnews",
+  "best_lr": 2e-05,
+  "hp_search": {
+    "1e-05": 0.9474,
+    "2e-05": 0.9478,
+    "5e-05": 0.9472
+  },
+  "seeds": [
+    123,
+    456,
+    789
+  ],
+  "full_data": {
+    "acc_mean": 0.9439,
+    "acc_std": 0.0016,
+    "f1_mean": 0.9439,
+    "f1_std": 0.0016,
+    "train_time_mean": 439.3,
+    "infer_time_mean": 1.443
+  },
+  "full_data_per_seed": [
+    {
+      "seed": 123,
+      "best_lr": 2e-05,
+      "accuracy": 0.9453,
+      "macro_f1": 0.9453,
+      "per_class": {
+        "World": {
+          "precision": 0.9703,
+          "recall": 0.9458,
+          "f1": 0.9579,
+          "support": 1900,
+          "accuracy": 0.9458
+        },
+        "Sports": {
+          "precision": 0.9858,
+          "recall": 0.9895,
+          "f1": 0.9877,
+          "support": 1900,
+          "accuracy": 0.9895
+        },
+        "Business": {
+          "precision": 0.9284,
+          "recall": 0.9011,
+          "f1": 0.9145,
+          "support": 1900,
+          "accuracy": 0.9011
+        },
+        "Sci/Tech": {
+          "precision": 0.8988,
+          "recall": 0.9447,
+          "f1": 0.9212,
+          "support": 1900,
+          "accuracy": 0.9447
+        }
+      },
+      "train_time": 438.1,
+      "infer_time": 1.495,
+      "epoch_logs": [
+        {
+          "epoch": 1,
+          "train_loss": 0.3347,
+          "val_loss": 0.1967,
+          "val_acc": 0.9337,
+          "val_f1": 0.9341
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.1525,
+          "val_loss": 0.1681,
+          "val_acc": 0.9456,
+          "val_f1": 0.9455
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.104,
+          "val_loss": 0.1859,
+          "val_acc": 0.9478,
+          "val_f1": 0.9478
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.0705,
+          "val_loss": 0.2169,
+          "val_acc": 0.9449,
+          "val_f1": 0.9449
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.0477,
+          "val_loss": 0.2425,
+          "val_acc": 0.9441,
+          "val_f1": 0.9441
+        }
+      ],
+      "best_epoch": 3
+    },
+    {
+      "seed": 456,
+      "best_lr": 2e-05,
+      "accuracy": 0.9417,
+      "macro_f1": 0.9417,
+      "per_class": {
+        "World": {
+          "precision": 0.9575,
+          "recall": 0.9495,
+          "f1": 0.9535,
+          "support": 1900,
+          "accuracy": 0.9495
+        },
+        "Sports": {
+          "precision": 0.9848,
+          "recall": 0.9874,
+          "f1": 0.9861,
+          "support": 1900,
+          "accuracy": 0.9874
+        },
+        "Business": {
+          "precision": 0.9097,
+          "recall": 0.9116,
+          "f1": 0.9106,
+          "support": 1900,
+          "accuracy": 0.9116
+        },
+        "Sci/Tech": {
+          "precision": 0.915,
+          "recall": 0.9184,
+          "f1": 0.9167,
+          "support": 1900,
+          "accuracy": 0.9184
+        }
+      },
+      "train_time": 438.9,
+      "infer_time": 1.336,
+      "epoch_logs": [
+        {
+          "epoch": 1,
+          "train_loss": 0.3313,
+          "val_loss": 0.1865,
+          "val_acc": 0.9362,
+          "val_f1": 0.9358
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.1521,
+          "val_loss": 0.17,
+          "val_acc": 0.9448,
+          "val_f1": 0.9447
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.1033,
+          "val_loss": 0.182,
+          "val_acc": 0.9455,
+          "val_f1": 0.9455
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.0698,
+          "val_loss": 0.2132,
+          "val_acc": 0.9457,
+          "val_f1": 0.9456
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.0465,
+          "val_loss": 0.2461,
+          "val_acc": 0.9445,
+          "val_f1": 0.9445
+        }
+      ],
+      "best_epoch": 4
+    },
+    {
+      "seed": 789,
+      "best_lr": 2e-05,
+      "accuracy": 0.9446,
+      "macro_f1": 0.9446,
+      "per_class": {
+        "World": {
+          "precision": 0.9569,
+          "recall": 0.9574,
+          "f1": 0.9571,
+          "support": 1900,
+          "accuracy": 0.9574
+        },
+        "Sports": {
+          "precision": 0.99,
+          "recall": 0.9853,
+          "f1": 0.9876,
+          "support": 1900,
+          "accuracy": 0.9853
+        },
+        "Business": {
+          "precision": 0.9113,
+          "recall": 0.9195,
+          "f1": 0.9154,
+          "support": 1900,
+          "accuracy": 0.9195
+        },
+        "Sci/Tech": {
+          "precision": 0.9207,
+          "recall": 0.9163,
+          "f1": 0.9185,
+          "support": 1900,
+          "accuracy": 0.9163
+        }
+      },
+      "train_time": 441.0,
+      "infer_time": 1.497,
+      "epoch_logs": [
+        {
+          "epoch": 1,
+          "train_loss": 0.3343,
+          "val_loss": 0.1845,
+          "val_acc": 0.9377,
+          "val_f1": 0.9374
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.1525,
+          "val_loss": 0.1719,
+          "val_acc": 0.9443,
+          "val_f1": 0.9443
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.1034,
+          "val_loss": 0.1866,
+          "val_acc": 0.9437,
+          "val_f1": 0.9437
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.07,
+          "val_loss": 0.2147,
+          "val_acc": 0.9452,
+          "val_f1": 0.9452
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.0466,
+          "val_loss": 0.2502,
+          "val_acc": 0.9433,
+          "val_f1": 0.9434
+        }
+      ],
+      "best_epoch": 4
+    }
+  ],
+  "efficiency": {
+    "1.0": {
+      "acc_mean": 0.9439,
+      "acc_std": 0.0016,
+      "f1_mean": 0.9439,
+      "f1_std": 0.0016,
+      "train_time_mean": 439.3,
+      "infer_time_mean": 1.443
+    },
+    "0.5": {
+      "acc_mean": 0.9388,
+      "acc_std": 0.0009,
+      "f1_mean": 0.9388,
+      "f1_std": 0.0008,
+      "train_time_mean": 211.1,
+      "infer_time_mean": 1.428
+    },
+    "0.25": {
+      "acc_mean": 0.9312,
+      "acc_std": 0.0016,
+      "f1_mean": 0.9311,
+      "f1_std": 0.0017,
+      "train_time_mean": 118.0,
+      "infer_time_mean": 1.464
+    },
+    "0.1": {
+      "acc_mean": 0.9181,
+      "acc_std": 0.0007,
+      "f1_mean": 0.918,
+      "f1_std": 0.0007,
+      "train_time_mean": 54.0,
+      "infer_time_mean": 1.448
+    },
+    "0.05": {
+      "acc_mean": 0.909,
+      "acc_std": 0.0008,
+      "f1_mean": 0.909,
+      "f1_std": 0.0009,
+      "train_time_mean": 32.7,
+      "infer_time_mean": 1.441
+    },
+    "0.01": {
+      "acc_mean": 0.894,
+      "acc_std": 0.002,
+      "f1_mean": 0.8937,
+      "f1_std": 0.0019,
+      "train_time_mean": 15.1,
+      "infer_time_mean": 1.356
+    }
+  },
+  "efficiency_detail": {
+    "100pct": {
+      "fraction": 1.0,
+      "n_train": 108000,
+      "acc_mean": 0.9439,
+      "acc_std": 0.0016,
+      "f1_mean": 0.9439,
+      "f1_std": 0.0016,
+      "avg_per_class": {
+        "World": {
+          "precision": 0.9616,
+          "recall": 0.9509,
+          "f1": 0.9562
+        },
+        "Sports": {
+          "precision": 0.9869,
+          "recall": 0.9874,
+          "f1": 0.9871
+        },
+        "Business": {
+          "precision": 0.9165,
+          "recall": 0.9107,
+          "f1": 0.9135
+        },
+        "Sci/Tech": {
+          "precision": 0.9115,
+          "recall": 0.9265,
+          "f1": 0.9188
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 123,
+          "accuracy": 0.9453,
+          "macro_f1": 0.9453,
+          "per_class": {
+            "World": {
+              "precision": 0.9703,
+              "recall": 0.9458,
+              "f1": 0.9579,
+              "support": 1900,
+              "accuracy": 0.9458
+            },
+            "Sports": {
+              "precision": 0.9858,
+              "recall": 0.9895,
+              "f1": 0.9877,
+              "support": 1900,
+              "accuracy": 0.9895
+            },
+            "Business": {
+              "precision": 0.9284,
+              "recall": 0.9011,
+              "f1": 0.9145,
+              "support": 1900,
+              "accuracy": 0.9011
+            },
+            "Sci/Tech": {
+              "precision": 0.8988,
+              "recall": 0.9447,
+              "f1": 0.9212,
+              "support": 1900,
+              "accuracy": 0.9447
+            }
+          },
+          "train_time": 438.1
+        },
+        {
+          "seed": 456,
+          "accuracy": 0.9417,
+          "macro_f1": 0.9417,
+          "per_class": {
+            "World": {
+              "precision": 0.9575,
+              "recall": 0.9495,
+              "f1": 0.9535,
+              "support": 1900,
+              "accuracy": 0.9495
+            },
+            "Sports": {
+              "precision": 0.9848,
+              "recall": 0.9874,
+              "f1": 0.9861,
+              "support": 1900,
+              "accuracy": 0.9874
+            },
+            "Business": {
+              "precision": 0.9097,
+              "recall": 0.9116,
+              "f1": 0.9106,
+              "support": 1900,
+              "accuracy": 0.9116
+            },
+            "Sci/Tech": {
+              "precision": 0.915,
+              "recall": 0.9184,
+              "f1": 0.9167,
+              "support": 1900,
+              "accuracy": 0.9184
+            }
+          },
+          "train_time": 438.9
+        },
+        {
+          "seed": 789,
+          "accuracy": 0.9446,
+          "macro_f1": 0.9446,
+          "per_class": {
+            "World": {
+              "precision": 0.9569,
+              "recall": 0.9574,
+              "f1": 0.9571,
+              "support": 1900,
+              "accuracy": 0.9574
+            },
+            "Sports": {
+              "precision": 0.99,
+              "recall": 0.9853,
+              "f1": 0.9876,
+              "support": 1900,
+              "accuracy": 0.9853
+            },
+            "Business": {
+              "precision": 0.9113,
+              "recall": 0.9195,
+              "f1": 0.9154,
+              "support": 1900,
+              "accuracy": 0.9195
+            },
+            "Sci/Tech": {
+              "precision": 0.9207,
+              "recall": 0.9163,
+              "f1": 0.9185,
+              "support": 1900,
+              "accuracy": 0.9163
+            }
+          },
+          "train_time": 441.0
+        }
+      ]
+    },
+    "50pct": {
+      "fraction": 0.5,
+      "n_train": 54000,
+      "acc_mean": 0.9388,
+      "acc_std": 0.0009,
+      "f1_mean": 0.9388,
+      "f1_std": 0.0008,
+      "avg_per_class": {
+        "World": {
+          "precision": 0.9522,
+          "recall": 0.9458,
+          "f1": 0.9489
+        },
+        "Sports": {
+          "precision": 0.9842,
+          "recall": 0.9846,
+          "f1": 0.9844
+        },
+        "Business": {
+          "precision": 0.9092,
+          "recall": 0.907,
+          "f1": 0.9081
+        },
+        "Sci/Tech": {
+          "precision": 0.91,
+          "recall": 0.9177,
+          "f1": 0.9138
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 123,
+          "accuracy": 0.9379,
+          "macro_f1": 0.938,
+          "per_class": {
+            "World": {
+              "precision": 0.9572,
+              "recall": 0.9411,
+              "f1": 0.949,
+              "support": 1900,
+              "accuracy": 0.9411
+            },
+            "Sports": {
+              "precision": 0.9863,
+              "recall": 0.9847,
+              "f1": 0.9855,
+              "support": 1900,
+              "accuracy": 0.9847
+            },
+            "Business": {
+              "precision": 0.9072,
+              "recall": 0.9053,
+              "f1": 0.9062,
+              "support": 1900,
+              "accuracy": 0.9053
+            },
+            "Sci/Tech": {
+              "precision": 0.902,
+              "recall": 0.9205,
+              "f1": 0.9112,
+              "support": 1900,
+              "accuracy": 0.9205
+            }
+          },
+          "train_time": 180.6
+        },
+        {
+          "seed": 456,
+          "accuracy": 0.94,
+          "macro_f1": 0.9399,
+          "per_class": {
+            "World": {
+              "precision": 0.9483,
+              "recall": 0.9463,
+              "f1": 0.9473,
+              "support": 1900,
+              "accuracy": 0.9463
+            },
+            "Sports": {
+              "precision": 0.9812,
+              "recall": 0.9879,
+              "f1": 0.9845,
+              "support": 1900,
+              "accuracy": 0.9879
+            },
+            "Business": {
+              "precision": 0.9208,
+              "recall": 0.9,
+              "f1": 0.9103,
+              "support": 1900,
+              "accuracy": 0.9
+            },
+            "Sci/Tech": {
+              "precision": 0.9095,
+              "recall": 0.9258,
+              "f1": 0.9176,
+              "support": 1900,
+              "accuracy": 0.9258
+            }
+          },
+          "train_time": 225.1
+        },
+        {
+          "seed": 789,
+          "accuracy": 0.9384,
+          "macro_f1": 0.9385,
+          "per_class": {
+            "World": {
+              "precision": 0.951,
+              "recall": 0.95,
+              "f1": 0.9505,
+              "support": 1900,
+              "accuracy": 0.95
+            },
+            "Sports": {
+              "precision": 0.9852,
+              "recall": 0.9811,
+              "f1": 0.9831,
+              "support": 1900,
+              "accuracy": 0.9811
+            },
+            "Business": {
+              "precision": 0.8997,
+              "recall": 0.9158,
+              "f1": 0.9077,
+              "support": 1900,
+              "accuracy": 0.9158
+            },
+            "Sci/Tech": {
+              "precision": 0.9184,
+              "recall": 0.9068,
+              "f1": 0.9126,
+              "support": 1900,
+              "accuracy": 0.9068
+            }
+          },
+          "train_time": 225.9
+        }
+      ]
+    },
+    "25pct": {
+      "fraction": 0.25,
+      "n_train": 27000,
+      "acc_mean": 0.9312,
+      "acc_std": 0.0016,
+      "f1_mean": 0.9311,
+      "f1_std": 0.0017,
+      "avg_per_class": {
+        "World": {
+          "precision": 0.9497,
+          "recall": 0.9325,
+          "f1": 0.941
+        },
+        "Sports": {
+          "precision": 0.9784,
+          "recall": 0.9844,
+          "f1": 0.9814
+        },
+        "Business": {
+          "precision": 0.9016,
+          "recall": 0.893,
+          "f1": 0.8972
+        },
+        "Sci/Tech": {
+          "precision": 0.8956,
+          "recall": 0.9147,
+          "f1": 0.9051
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 123,
+          "accuracy": 0.9307,
+          "macro_f1": 0.9306,
+          "per_class": {
+            "World": {
+              "precision": 0.9443,
+              "recall": 0.9363,
+              "f1": 0.9403,
+              "support": 1900,
+              "accuracy": 0.9363
+            },
+            "Sports": {
+              "precision": 0.9801,
+              "recall": 0.9858,
+              "f1": 0.9829,
+              "support": 1900,
+              "accuracy": 0.9858
+            },
+            "Business": {
+              "precision": 0.9007,
+              "recall": 0.8926,
+              "f1": 0.8966,
+              "support": 1900,
+              "accuracy": 0.8926
+            },
+            "Sci/Tech": {
+              "precision": 0.8975,
+              "recall": 0.9079,
+              "f1": 0.9027,
+              "support": 1900,
+              "accuracy": 0.9079
+            }
+          },
+          "train_time": 119.4
+        },
+        {
+          "seed": 456,
+          "accuracy": 0.9295,
+          "macro_f1": 0.9294,
+          "per_class": {
+            "World": {
+              "precision": 0.951,
+              "recall": 0.9295,
+              "f1": 0.9401,
+              "support": 1900,
+              "accuracy": 0.9295
+            },
+            "Sports": {
+              "precision": 0.972,
+              "recall": 0.9868,
+              "f1": 0.9794,
+              "support": 1900,
+              "accuracy": 0.9868
+            },
+            "Business": {
+              "precision": 0.9069,
+              "recall": 0.8816,
+              "f1": 0.894,
+              "support": 1900,
+              "accuracy": 0.8816
+            },
+            "Sci/Tech": {
+              "precision": 0.8887,
+              "recall": 0.92,
+              "f1": 0.9041,
+              "support": 1900,
+              "accuracy": 0.92
+            }
+          },
+          "train_time": 118.5
+        },
+        {
+          "seed": 789,
+          "accuracy": 0.9333,
+          "macro_f1": 0.9334,
+          "per_class": {
+            "World": {
+              "precision": 0.9537,
+              "recall": 0.9316,
+              "f1": 0.9425,
+              "support": 1900,
+              "accuracy": 0.9316
+            },
+            "Sports": {
+              "precision": 0.9831,
+              "recall": 0.9805,
+              "f1": 0.9818,
+              "support": 1900,
+              "accuracy": 0.9805
+            },
+            "Business": {
+              "precision": 0.8972,
+              "recall": 0.9047,
+              "f1": 0.9009,
+              "support": 1900,
+              "accuracy": 0.9047
+            },
+            "Sci/Tech": {
+              "precision": 0.9007,
+              "recall": 0.9163,
+              "f1": 0.9084,
+              "support": 1900,
+              "accuracy": 0.9163
+            }
+          },
+          "train_time": 119.1
+        }
+      ]
+    },
+    "10pct": {
+      "fraction": 0.1,
+      "n_train": 10800,
+      "acc_mean": 0.9181,
+      "acc_std": 0.0007,
+      "f1_mean": 0.918,
+      "f1_std": 0.0007,
+      "avg_per_class": {
+        "World": {
+          "precision": 0.9347,
+          "recall": 0.9135,
+          "f1": 0.9239
+        },
+        "Sports": {
+          "precision": 0.9696,
+          "recall": 0.983,
+          "f1": 0.9762
+        },
+        "Business": {
+          "precision": 0.8866,
+          "recall": 0.8737,
+          "f1": 0.88
+        },
+        "Sci/Tech": {
+          "precision": 0.8823,
+          "recall": 0.9023,
+          "f1": 0.8921
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 123,
+          "accuracy": 0.9188,
+          "macro_f1": 0.9187,
+          "per_class": {
+            "World": {
+              "precision": 0.9267,
+              "recall": 0.9253,
+              "f1": 0.926,
+              "support": 1900,
+              "accuracy": 0.9253
+            },
+            "Sports": {
+              "precision": 0.9749,
+              "recall": 0.9821,
+              "f1": 0.9785,
+              "support": 1900,
+              "accuracy": 0.9821
+            },
+            "Business": {
+              "precision": 0.8903,
+              "recall": 0.8716,
+              "f1": 0.8809,
+              "support": 1900,
+              "accuracy": 0.8716
+            },
+            "Sci/Tech": {
+              "precision": 0.8828,
+              "recall": 0.8963,
+              "f1": 0.8895,
+              "support": 1900,
+              "accuracy": 0.8963
+            }
+          },
+          "train_time": 54.1
+        },
+        {
+          "seed": 456,
+          "accuracy": 0.9184,
+          "macro_f1": 0.9183,
+          "per_class": {
+            "World": {
+              "precision": 0.9292,
+              "recall": 0.9184,
+              "f1": 0.9238,
+              "support": 1900,
+              "accuracy": 0.9184
+            },
+            "Sports": {
+              "precision": 0.9749,
+              "recall": 0.9811,
+              "f1": 0.978,
+              "support": 1900,
+              "accuracy": 0.9811
+            },
+            "Business": {
+              "precision": 0.9002,
+              "recall": 0.8595,
+              "f1": 0.8794,
+              "support": 1900,
+              "accuracy": 0.8595
+            },
+            "Sci/Tech": {
+              "precision": 0.8707,
+              "recall": 0.9147,
+              "f1": 0.8922,
+              "support": 1900,
+              "accuracy": 0.9147
+            }
+          },
+          "train_time": 53.9
+        },
+        {
+          "seed": 789,
+          "accuracy": 0.9171,
+          "macro_f1": 0.9171,
+          "per_class": {
+            "World": {
+              "precision": 0.9482,
+              "recall": 0.8968,
+              "f1": 0.9218,
+              "support": 1900,
+              "accuracy": 0.8968
+            },
+            "Sports": {
+              "precision": 0.959,
+              "recall": 0.9858,
+              "f1": 0.9722,
+              "support": 1900,
+              "accuracy": 0.9858
+            },
+            "Business": {
+              "precision": 0.8694,
+              "recall": 0.89,
+              "f1": 0.8796,
+              "support": 1900,
+              "accuracy": 0.89
+            },
+            "Sci/Tech": {
+              "precision": 0.8934,
+              "recall": 0.8958,
+              "f1": 0.8946,
+              "support": 1900,
+              "accuracy": 0.8958
+            }
+          },
+          "train_time": 53.6
+        }
+      ]
+    },
+    "5pct": {
+      "fraction": 0.05,
+      "n_train": 5400,
+      "acc_mean": 0.909,
+      "acc_std": 0.0008,
+      "f1_mean": 0.909,
+      "f1_std": 0.0009,
+      "avg_per_class": {
+        "World": {
+          "precision": 0.9276,
+          "recall": 0.894,
+          "f1": 0.9104
+        },
+        "Sports": {
+          "precision": 0.9686,
+          "recall": 0.9726,
+          "f1": 0.9706
+        },
+        "Business": {
+          "precision": 0.8827,
+          "recall": 0.8542,
+          "f1": 0.8682
+        },
+        "Sci/Tech": {
+          "precision": 0.8601,
+          "recall": 0.9151,
+          "f1": 0.8867
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 123,
+          "accuracy": 0.9082,
+          "macro_f1": 0.9081,
+          "per_class": {
+            "World": {
+              "precision": 0.9227,
+              "recall": 0.8979,
+              "f1": 0.9101,
+              "support": 1900,
+              "accuracy": 0.8979
+            },
+            "Sports": {
+              "precision": 0.9675,
+              "recall": 0.9726,
+              "f1": 0.9701,
+              "support": 1900,
+              "accuracy": 0.9726
+            },
+            "Business": {
+              "precision": 0.8842,
+              "recall": 0.8479,
+              "f1": 0.8657,
+              "support": 1900,
+              "accuracy": 0.8479
+            },
+            "Sci/Tech": {
+              "precision": 0.8603,
+              "recall": 0.9142,
+              "f1": 0.8865,
+              "support": 1900,
+              "accuracy": 0.9142
+            }
+          },
+          "train_time": 32.9
+        },
+        {
+          "seed": 456,
+          "accuracy": 0.9087,
+          "macro_f1": 0.9087,
+          "per_class": {
+            "World": {
+              "precision": 0.9422,
+              "recall": 0.8842,
+              "f1": 0.9123,
+              "support": 1900,
+              "accuracy": 0.8842
+            },
+            "Sports": {
+              "precision": 0.9647,
+              "recall": 0.9789,
+              "f1": 0.9718,
+              "support": 1900,
+              "accuracy": 0.9789
+            },
+            "Business": {
+              "precision": 0.8831,
+              "recall": 0.8505,
+              "f1": 0.8665,
+              "support": 1900,
+              "accuracy": 0.8505
+            },
+            "Sci/Tech": {
+              "precision": 0.8499,
+              "recall": 0.9211,
+              "f1": 0.8841,
+              "support": 1900,
+              "accuracy": 0.9211
+            }
+          },
+          "train_time": 32.7
+        },
+        {
+          "seed": 789,
+          "accuracy": 0.9101,
+          "macro_f1": 0.9102,
+          "per_class": {
+            "World": {
+              "precision": 0.9179,
+              "recall": 0.9,
+              "f1": 0.9088,
+              "support": 1900,
+              "accuracy": 0.9
+            },
+            "Sports": {
+              "precision": 0.9735,
+              "recall": 0.9663,
+              "f1": 0.9699,
+              "support": 1900,
+              "accuracy": 0.9663
+            },
+            "Business": {
+              "precision": 0.8809,
+              "recall": 0.8642,
+              "f1": 0.8725,
+              "support": 1900,
+              "accuracy": 0.8642
+            },
+            "Sci/Tech": {
+              "precision": 0.8702,
+              "recall": 0.91,
+              "f1": 0.8896,
+              "support": 1900,
+              "accuracy": 0.91
+            }
+          },
+          "train_time": 32.8
+        }
+      ]
+    },
+    "1pct": {
+      "fraction": 0.01,
+      "n_train": 1080,
+      "acc_mean": 0.894,
+      "acc_std": 0.002,
+      "f1_mean": 0.8937,
+      "f1_std": 0.0019,
+      "avg_per_class": {
+        "World": {
+          "precision": 0.9201,
+          "recall": 0.8797,
+          "f1": 0.8994
+        },
+        "Sports": {
+          "precision": 0.9546,
+          "recall": 0.98,
+          "f1": 0.9671
+        },
+        "Business": {
+          "precision": 0.8476,
+          "recall": 0.8346,
+          "f1": 0.8409
+        },
+        "Sci/Tech": {
+          "precision": 0.8542,
+          "recall": 0.8816,
+          "f1": 0.8676
+        }
+      },
+      "per_seed": [
+        {
+          "seed": 123,
+          "accuracy": 0.892,
+          "macro_f1": 0.8917,
+          "per_class": {
+            "World": {
+              "precision": 0.9116,
+              "recall": 0.8905,
+              "f1": 0.901,
+              "support": 1900,
+              "accuracy": 0.8905
+            },
+            "Sports": {
+              "precision": 0.9559,
+              "recall": 0.98,
+              "f1": 0.9678,
+              "support": 1900,
+              "accuracy": 0.98
+            },
+            "Business": {
+              "precision": 0.8403,
+              "recall": 0.8305,
+              "f1": 0.8354,
+              "support": 1900,
+              "accuracy": 0.8305
+            },
+            "Sci/Tech": {
+              "precision": 0.8587,
+              "recall": 0.8668,
+              "f1": 0.8628,
+              "support": 1900,
+              "accuracy": 0.8668
+            }
+          },
+          "train_time": 14.9
+        },
+        {
+          "seed": 456,
+          "accuracy": 0.8967,
+          "macro_f1": 0.8963,
+          "per_class": {
+            "World": {
+              "precision": 0.9189,
+              "recall": 0.8832,
+              "f1": 0.9007,
+              "support": 1900,
+              "accuracy": 0.8832
+            },
+            "Sports": {
+              "precision": 0.9501,
+              "recall": 0.9816,
+              "f1": 0.9656,
+              "support": 1900,
+              "accuracy": 0.9816
+            },
+            "Business": {
+              "precision": 0.8675,
+              "recall": 0.8237,
+              "f1": 0.845,
+              "support": 1900,
+              "accuracy": 0.8237
+            },
+            "Sci/Tech": {
+              "precision": 0.8505,
+              "recall": 0.8984,
+              "f1": 0.8738,
+              "support": 1900,
+              "accuracy": 0.8984
+            }
+          },
+          "train_time": 15.7
+        },
+        {
+          "seed": 789,
+          "accuracy": 0.8932,
+          "macro_f1": 0.8932,
+          "per_class": {
+            "World": {
+              "precision": 0.9299,
+              "recall": 0.8653,
+              "f1": 0.8964,
+              "support": 1900,
+              "accuracy": 0.8653
+            },
+            "Sports": {
+              "precision": 0.9578,
+              "recall": 0.9784,
+              "f1": 0.968,
+              "support": 1900,
+              "accuracy": 0.9784
+            },
+            "Business": {
+              "precision": 0.835,
+              "recall": 0.8495,
+              "f1": 0.8422,
+              "support": 1900,
+              "accuracy": 0.8495
+            },
+            "Sci/Tech": {
+              "precision": 0.8534,
+              "recall": 0.8795,
+              "f1": 0.8663,
+              "support": 1900,
+              "accuracy": 0.8795
+            }
+          },
+          "train_time": 15.1
+        }
+      ]
+    }
+  }
+}
